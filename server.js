@@ -29,6 +29,9 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { use
 app.get("/exercise", function (req, res) {
   res.sendFile(path.join(__dirname, "public/exercise.html"));
 });
+app.get("/", function (req, res) {
+  res.sendFile(path.join(__dirname, "public/index.html"));
+});
 
 app.get("/api/workouts", (req, res) => {
 
