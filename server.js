@@ -16,7 +16,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://user:password1@ds225608.mlab.com:25608/heroku_5v1mqcw5", { useNewUrlParser: true, useUnifiedTopology: true });
 
 // db.User.create({ name: "Ernest Hemingway" })
 //   .then(dbUser => {
